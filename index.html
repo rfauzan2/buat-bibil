@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sebuah Surat">
+    <title>Buat Bibil</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript">
+      function OpenModal() {
+        let element = document.getElementById('overlay')
+        element.style.display = 'block'
+      }
+      function CloseModal() {
+        let element = document.getElementById('overlay')
+        element.style.display = 'none'
+      }
+    </script>
+  </head>
+  <body>
+    <div class="amplop">
+      <img id='amplop1' src="img/envelop-closed.png" alt="amplop">
+      <img onclick="OpenModal()" id='amplop2' src="img/envelop-open.png" alt="">
+    </div>
+    <div class="overlay" id="overlay" onclick="CloseModal()">
+      <div class="kertas">
+        <div class="teks">
+          <p>Halo bibil</p>
+          <p>gimana kabarnya? moga baik-baik aja ya</p>
+          <p>Happy Birthday!! cie udah kepala 2</p>
+          <p>semoga yang diharapkan bisa tercapai semua, makin kece lagi</p>
+          <p>apapun yang lo rasain sekarang, lo harus inget bahwa lo hebat, oke?</p>
+          <p>Hope we can talk again soon :)</p>
+          <p>-Rara</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
